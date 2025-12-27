@@ -1,6 +1,28 @@
 .navbar {
-  background-color: #fff;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
+
+.navbar.scrolled {
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+section .subtitle {
+  color: #f2ad3d;
+  font-weight: bold;
+  text-align: center;
+}
+
+section h1 {
+  color: #222;
+  text-align: center;
+}
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -9,40 +31,42 @@
   overflow: hidden;
 }
 
-.hero-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(245, 240, 220, 0.9),
-    rgba(220, 185, 120, 0.9)
-  );
+  background: radial-gradient(circle at right, #e89b00, #f9c84a);
   z-index: 1;
 }
 
-.hero .container {
-  position: relative;
-  z-index: 2;
+.hero-img {
+  width: 80%;
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .about {
   background-color: #f9f9f9;
+  padding: 100px;
 }
-section .subtitle {
-  color: #f2ad3d;
-}
-.card {
-  background: linear-gradient(135deg, #f2ad3d, #fdf092);
+
+.about .card {
+  background: #f9c84a;
   color: #222;
   border: none;
   box-shadow: 0 4px 8px rgba(223, 216, 216, 0.1);
@@ -54,4 +78,14 @@ section .subtitle {
 .about .card-title {
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
+}
+
+.services .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
 }
