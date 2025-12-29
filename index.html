@@ -71,7 +71,7 @@
               YAYASAN <br />IMAM MALIK<br />
               BANDUNG
             </h1>
-            <p class="text-mute">
+            <p class="text-muted">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque
               sint, vero consequuntur temporibus molestias quas ipsum cumque
               odit commodi?
@@ -157,12 +157,7 @@
 
         <div class="row justify-content-center g-4">
           <div class="col-lg-5 col-sm-12">
-            <div
-              class="card"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div class="card" data-aos="fade-right" data-aos-delay="100">
               <div class="card-body">
                 <h5 class="card-title mb-4">Visi</h5>
                 <p class="card-text mb-1">
@@ -175,12 +170,7 @@
             </div>
           </div>
           <div class="col-lg-5 col-sm-12">
-            <div
-              class="card"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
+            <div class="card" data-aos="fade-left" data-aos-delay="150">
               <div class="card-body">
                 <h5 class="card-title mb-4">Misi</h5>
                 <ul class="list-unstyled" id="misiList">
@@ -267,7 +257,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
               <div class="card-body text-center">
                 <img
                   src="./images/17.png"
@@ -285,7 +275,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card" data-aos="fade-up" data-aos-delay="500">
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
               <div class="card-body text-center">
                 <img
                   src="./images/20.png"
@@ -303,7 +293,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card" data-aos="fade-up" data-aos-delay="700">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
               <div class="card-body text-center">
                 <img
                   src="./images/19.png"
@@ -321,7 +311,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card" data-aos="fade-up" data-aos-delay="900">
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
               <div class="card-body">
                 <h5 class="card-title">Bakti Sosial</h5>
                 <p class="card-text">
@@ -372,7 +362,11 @@
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-cubic",
+        once: true,
+      });
     </script>
   </body>
 </html>
