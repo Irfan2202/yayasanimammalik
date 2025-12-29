@@ -328,9 +328,7 @@
       <div class="row">
         <div class="col-lg-6"></div>
         <div class="col-lg-6">
-          <div
-            class="container justify-content-center align-items-center text-center"
-          >
+          <div class="container">
             <h1 class="fw-bold display-1 text-dark">
               Mari Berkontribusi Bersama Kami
             </h1>
@@ -349,28 +347,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      /* Navbar scroll */
-      const navbar = document.querySelector(".navbar");
-      window.addEventListener("scroll", () => {
-        navbar.classList.toggle("scrolled", window.scrollY > 50);
-        navbar.setAttribute(
-          "data-bs-theme",
-          window.scrollY > 50 ? "light" : "dark"
-        );
-      });
-
-      /* UNIVERSAL TOGGLE (Tentang + Misi) */
-      document.querySelectorAll(".toggle-btn").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          const targetClass = this.dataset.target;
-          const targets = document.querySelectorAll("." + targetClass);
-          const isHidden = targets[0].classList.contains("d-none");
-
-          targets.forEach((el) => el.classList.toggle("d-none"));
-          this.textContent = isHidden ? "Tutup" : "Lihat selengkapnya";
-        });
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
