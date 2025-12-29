@@ -1,3 +1,9 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
 .navbar {
   background-color: transparent;
   transition: all 0.3s ease;
