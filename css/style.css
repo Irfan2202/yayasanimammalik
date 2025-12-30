@@ -2,6 +2,7 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -42,10 +43,10 @@ section h1 {
   z-index: 2;
 }
 
-.hero h1 {
-  font-size: 5.5rem;
-  font-weight: bold;
-  line-height: 1.2;
+.hero-title {
+  font-size: clamp(5rem, 6vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.05;
 }
 
 .hero-btn {
