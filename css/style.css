@@ -42,6 +42,30 @@ section h1 {
   z-index: 2;
 }
 
+.hero-btn {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.hero p {
+  max-width: 500px;
+  margin-top: 40px;
+}
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-light.hero-btn {
+  border: 1px solid #dee2e6;
+}
+
 .hero::before {
   content: "";
   position: absolute;
